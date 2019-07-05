@@ -1,0 +1,33 @@
+body {
+    margin: 0px;
+    margin-top: -22px;
+}
+.bandsite__header {
+    background-color: grey;
+}
+.bandsite__header__logo {
+    color: white;
+    text-align: center;
+    
+    
+}
+.bandsite__header__logo > h1 {
+    box-sizing: border-box;
+}
+.bandsite__header__menu {
+    box-sizing: border-box;
+}
+.bandsite__header__menu__list {
+    display: flex;
+    list-style-type: none;
+    overflow: hidden;
+    flex-direction: row;
+    padding-inline-start: 0px;
+    box-sizing: border-box;
+}
+ul.bandsite__header__menu__list > li {
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    width: 50%;
+}
