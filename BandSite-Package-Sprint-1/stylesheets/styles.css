@@ -1,28 +1,70 @@
+@font-face {
+  src: url("../4.0 - Assets/_Global Font/AvenirNextProLT/");
+}
+
 body {
   margin: 0px;
-  margin-top: -22px;
+  font-family: AvenirNextProLT;
+  color: #FAFAFA;
+}
+
+body h1 {
+  font-size: 24px;
+  line-height: 32px;
+  margin: 0;
+}
+
+body h2 {
+  font-size: 14px;
+  line-height: 22px;
+  margin: 0;
+}
+
+body h4 {
+  font-size: 13px;
+  line-height: 18px;
+  margin: 0;
+}
+
+body h5 {
+  font-size: 12px;
+  line-height: 20px;
+  margin: 0;
 }
 
 .bandsite__header {
-  background-color: grey;
-}
-
-.bandsite__header__logo {
-  color: white;
+  background-color: #323232;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
 }
 
-.bandsite__header__logo > h1 {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+.bandsite__header img {
+  height: 100%;
+  width: auto;
+}
+
+.bandsite__header .bandsite__header__menu {
+  vertical-align: bottom;
+}
+
+.bandsite__header h1 {
+  margin-top: 8px;
+  margin-bottom: 0px;
 }
 
 .bandsite__header__menu {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  color: #AFAFAF;
+  margin-top: 16px;
 }
 
-.bandsite__header__menu__list {
+.bandsite__header__menu ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -36,13 +78,80 @@ body {
           padding-inline-start: 0px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin: 0px;
 }
 
-ul.bandsite__header__menu__list > li {
+.bandsite__header__menu ul li {
+  color: #AFAFAF;
   display: block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-align: center;
   width: 50%;
+  padding-bottom: auto;
+  border-bottom: 5px solid #323232;
+}
+
+.bandsite__header__menu ul li:hover {
+  color: #FAFAFA;
+  border-bottom: 5px solid #FAFAFA;
+}
+
+.bandsite__hero {
+  position: relative;
+  color: #FAFAFA;
+  background-color: rgba(50, 50, 50, 0.5);
+}
+
+.bandsite__hero img {
+  width: 100%;
+  max-height: 183px;
+  vertical-align: bottom;
+}
+
+.bandsite__hero h1 {
+  position: absolute;
+  top: 35%;
+  left: 40%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.bandsite__about {
+  color: #323232;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 32px;
+}
+
+.bandsite__about__title {
+  margin-bottom: 24px;
+}
+
+.bandsite__about__title h1 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.bandsite__about__picture {
+  margin-bottom: 24px;
+}
+
+.bandsite__about__picture img {
+  max-width: 100%;
+}
+
+.bandsite__about__quote h2 {
+  margin-bottom: 32px;
+}
+
+.bandsite__about__article {
+  margin-top: 40px;
+}
+
+.bandsite__about__article__column {
+  margin-top: 24px;
 }
 /*# sourceMappingURL=styles.css.map */
