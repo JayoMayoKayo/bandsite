@@ -1,6 +1,8 @@
 @font-face {
-    font-family: "AvenirNextRegular";
-    src: url(./fonts/Linotype\ -\ AvenirNextLTPro-Regular.otf) format("opentype")
+    font-family: "avenirNextRegular";
+    src: url('./fonts/Linotype\ -\ AvenirNextLTPro-Regular.otf') format('opentype'),
+        url('./fonts/alternative-files/Linotype\ -\ Avenir\ Next\ LT\ Pro.ttf') format('truetype'),
+        url('https://fonts.google.com/specimen/Roboto');
 }
 $black: #323232;
 $silver: #AFAFAF;
@@ -8,8 +10,11 @@ $highlight: #FAFAFA;
 
 body {
     margin: 0px;
-    font-family: AvenirNextProLT;
+    font-family: "avenirNextRegular";
     color: $highlight;
+    p {
+        font-family: "avenirNextRegular";
+    }
     h1 {
         font-size: 24px;
         line-height: 32px;

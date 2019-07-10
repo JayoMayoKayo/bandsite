@@ -1,7 +1,16 @@
+@font-face {
+  font-family: "avenirNextRegular";
+  src: url("./fonts/Linotype - AvenirNextLTPro-Regular.otf") format("opentype"), url("./fonts/alternative-files/Linotype - Avenir Next LT Pro.ttf") format("truetype"), url("https://fonts.google.com/specimen/Roboto");
+}
+
 body {
   margin: 0px;
-  font-family: AvenirNextProLT;
+  font-family: "avenirNextRegular";
   color: #FAFAFA;
+}
+
+body p {
+  font-family: "avenirNextRegular";
 }
 
 body h1 {
@@ -496,4 +505,4 @@ body h5 {
     width: 100%;
   }
 }
-/*# sourceMappingURL=biography-styles.css.map */
+/*# sourceMappingURL=biography.css.map */
