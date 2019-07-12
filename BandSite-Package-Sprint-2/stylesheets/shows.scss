@@ -1,0 +1,33 @@
+//Fonts
+@font-face {
+    font-family: "avenirNextRegular";
+    src: url('./fonts/Linotype\ -\ AvenirNextLTPro-Regular.otf') format('opentype'),
+        url('./fonts/alternative-files/Linotype\ -\ Avenir\ Next\ LT\ Pro.ttf') format('truetype'),
+        url('https://fonts.google.com/specimen/Roboto');
+}
+
+//Variables
+$black: #323232;
+$silver: #AFAFAF;
+$white: #FAFAFA;
+
+//Stylings
+body {
+    margin: 0px;
+    font-family: "avenirNextRegular";
+    background-color: $white;
+
+    //media 768px
+    @media (min-width: 768px) {
+
+    }
+    //media 1440p
+    @media (min-width: 1440px) {
+
+    }
+}
+
+.bandsite-shows__hero {
+    color: $white;
+    background-color: rgba($color: $black, $alpha: 0.5); 
+}
