@@ -6,28 +6,153 @@
         url('https://fonts.google.com/specimen/Roboto');
 }
 
-//Variables
-$black: #323232;
-$silver: #AFAFAF;
-$white: #FAFAFA;
+//Variable Colors
+    //Global
+    $black: #323232; //Paragraph Text
+    $silver: #AFAFAF; //Text Label Style
+    $mecury: #E1E1E1; //Text field border
+    $alabaster: #FAFAFA; // Text Field Background Fill
+    //Instock Colors
+    $black: #323232; //Navigation background fill
+    $inStockBlue: #004892;  //Primary CTA and Text link
+    $inStockBlueDark: #002F5F; //Primarly CTA Hover 
+    //BrainFlix
+    $black: #323232; //Navigation background fill
+    $brainFlixBlue: #0095FF; //Primary CTA and Text Link
+    $brainFlixBlueDark: #0065AD; //Primary CTA Hover
+    //BandSite
+    $black: #323232; //Navigation background fill
+    $black: #323232; //Primary CTA
+    $brainFlixBlueDark: #0065AD; //Primary CTA Hover
 
-//Stylings
+
+//Global Stylings
 body {
+    //Global Stylings
     margin: 0px;
     font-family: "avenirNextRegular";
-    background-color: $white;
+    background-color: $alabaster;
+    color: $black;
 
-    //media 768px
-    @media (min-width: 768px) {
-
+    //Mobile Body Stylings
+    h1 {
+        font-size: 24px;
+        line-height: 32px;
     }
-    //media 1440p
+    h2 {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    h4 {
+        font-size: 13px;
+        line-height: 18px;
+    }
+    h5 {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    //media 768px tablet display
+    @media (min-width: 768px) {
+        h1 {
+            font-size: 24px;
+            line-height: 32px;
+        }
+        h2 {
+            font-size: 14px;
+            line-height: 22px;
+        }
+        h4 {
+            font-size: 13px;
+            line-height: 18px;
+        }
+        h5 {
+            font-size: 12px;
+            line-height: 20px;
+        }
+    }
+    //media 1440p desktop display
     @media (min-width: 1440px) {
 
     }
 }
 
+//General Class Stylings 
+.bandsite__header {
+    color: $alabaster;
+    background-color: $black;
+    height: 80px;
+    position: relative;
+    top: -16px;
+    z-index: 2;
+}
+.bandsite__header__logo {
+    box-sizing: border-box;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    text-align: center;
+    h1 {
+        margin-bottom: 0px;
+    }
+}
+.bandsite__header__menu {
+    ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        padding-inline-start: 0px;
+        box-sizing: border-box;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        li {
+            box-sizing: border-box;
+            width: 50%;
+            text-align: center;
+            padding-bottom: 9px;
+            border-bottom: 5px solid $black;
+            &:hover { 
+                color: $alabaster;
+                border-bottom: 5px solid $alabaster;
+            }
+            h4 {
+                margin: 0px;
+            }
+        }
+    }
+}
 .bandsite-shows__hero {
-    color: $white;
+    color: $alabaster;
     background-color: rgba($color: $black, $alpha: 0.5); 
+    display: inline-block;
+    position: relative;
+    height: 473px;
+}
+.bandsite-shows__hero__image {
+    img {
+        width: 100%;
+        height: 472px;
+    }
+}
+.bandsite-shows__hero__content {
+    z-index: 1;
+    top: 80px;
+    position: absolute;
+    box-sizing: border-box;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 64px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.bandsite-shows__hero__content {
+    h1 {
+        margin-bottom: 0px;
+    }
+}
+.bandsite-shows__hero__content__music-player {
+    margin-top: 64px;
+    iframe {
+        width: 100%; 
+    }
 }
