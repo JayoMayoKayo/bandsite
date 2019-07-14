@@ -3,6 +3,16 @@
   src: url("./fonts/Linotype - AvenirNextLTPro-Regular.otf") format("opentype"), url("./fonts/alternative-files/Linotype - Avenir Next LT Pro.ttf") format("truetype"), url("https://fonts.google.com/specimen/Roboto");
 }
 
+@font-face {
+  font-family: "avenirNextDemiBold";
+  src: url("./fonts/Linotype - AvenirNextLTPro-Demi.otf") format("opentype"), url("./fonts/alternative-files/Linotype - Avenir Next LT Pro Demi.ttf") format("truetype"), url("https://fonts.google.com/specimen/Roboto");
+}
+
+@font-face {
+  font-family: "avenirNextBold";
+  src: url("./fonts/Linotype - AvenirNextLTPro-Bold.otf") format("opentype"), url("./fonts/alternative-files/Linotype - Avenir Next LT Pro Bold.ttf") format("truetype"), url("https://fonts.google.com/specimen/Roboto");
+}
+
 body {
   margin: 0px;
   font-family: "avenirNextRegular";
@@ -13,21 +23,29 @@ body {
 body h1 {
   font-size: 24px;
   line-height: 32px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 body h2 {
   font-size: 14px;
   line-height: 22px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 body h4 {
   font-size: 13px;
   line-height: 18px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 body h5 {
   font-size: 12px;
   line-height: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 @media (min-width: 768px) {
@@ -68,6 +86,7 @@ body h5 {
 
 .bandsite__header__logo h1 {
   margin-bottom: 0px;
+  padding-top: 7px;
 }
 
 .bandsite__header__menu ul {
@@ -88,11 +107,12 @@ body h5 {
 }
 
 .bandsite__header__menu ul li {
+  color: #E1E1E1;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 50%;
   text-align: center;
-  padding-bottom: 9px;
+  padding-bottom: 2px;
   border-bottom: 5px solid #323232;
 }
 
@@ -102,7 +122,8 @@ body h5 {
 }
 
 .bandsite__header__menu ul li h4 {
-  margin: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .bandsite-shows__hero {
@@ -110,7 +131,8 @@ body h5 {
   background-color: rgba(50, 50, 50, 0.5);
   display: inline-block;
   position: relative;
-  height: 473px;
+  top: -16px;
+  height: 472px;
 }
 
 .bandsite-shows__hero__image img {
@@ -120,7 +142,7 @@ body h5 {
 
 .bandsite-shows__hero__content {
   z-index: 1;
-  top: 80px;
+  top: 0px;
   position: absolute;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -139,6 +161,7 @@ body h5 {
 }
 
 .bandsite-shows__hero__content h1 {
+  font-family: "avenirNextBold";
   margin-bottom: 0px;
 }
 
@@ -148,5 +171,109 @@ body h5 {
 
 .bandsite-shows__hero__content__music-player iframe {
   width: 100%;
+}
+
+.bandsite-shows__showtimes {
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom: 40px;
+}
+
+.bandsite-shows__showtimes h1 {
+  font-family: "avenirNextBold";
+}
+
+.bandsite-shows__showtimes__table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 40px;
+  border-bottom: 2px solid #E1E1E1;
+}
+
+.bandsite-shows__showtimes__table__column {
+  width: 100%;
+}
+
+.bandsite-shows__showtimes__table__column button {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #FAFAFA;
+  background-color: #323232;
+  border: none;
+  border-radius: 4px;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.bandsite-shows__showtimes__table__column button:hover {
+  background-color: black;
+}
+
+#name {
+  color: #AFAFAF;
+  margin-bottom: 16px;
+}
+
+#value {
+  color: #323232;
+  margin-bottom: 24px;
+}
+
+.bandsite__footer {
+  color: #FAFAFA;
+  background-color: #323232;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.bandsite__footer__social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.bandsite__footer__social-media__title {
+  width: 100%;
+  font-family: "avenirNextBold";
+}
+
+.bandsite__footer__social-media__icon {
+  margin: 32px 0px;
+  width: 100%;
+}
+
+.bandsite__footer__social-media__icon img {
+  margin-left: 16px;
+}
+
+.bandsite__footer__contact-us {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.bandsite__footer__contact-us__column h2 {
+  font-family: "avenirNextDemiBold";
+  margin-bottom: 16px;
+}
+
+.bandsite__footer__contact-us__column h5 {
+  font-family: "avenirNextRegular";
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.bandsite__footer__copyright {
+  margin-left: 16px;
+  margin-right: 16px;
 }
 /*# sourceMappingURL=shows.css.map */
