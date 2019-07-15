@@ -50,26 +50,18 @@ body {
     h1 {
         font-size: 24px;
         line-height: 32px;
-        margin-top: 0px;
-        margin-bottom: 0px;
     }
     h2 {
         font-size: 14px;
         line-height: 22px;
-        margin-top: 0px;
-        margin-bottom: 0px;
     }
     h4 {
         font-size: 13px;
         line-height: 18px;
-        margin-top: 0px;
-        margin-bottom: 0px;
     }
     h5 {
         font-size: 12px;
         line-height: 20px;
-        margin-top: 0px;
-        margin-bottom: 0px;
     }
 
     //media 768px tablet display
@@ -99,24 +91,38 @@ body {
 
 //General Class Stylings 
 .bandsite__header {
+    display: flex;
+    flex-wrap: wrap;
     color: $alabaster;
     background-color: $black;
     height: 80px;
     position: relative;
-    top: -16px;
     z-index: 2;
 }
 .bandsite__header__logo {
     box-sizing: border-box;
-    margin-top: 16px;
+    width: 100%;
     margin-bottom: 16px;
     text-align: center;
     h1 {
+        margin-top: 0px;
         margin-bottom: 0px;
         padding-top: 7px;
     }
+    @media (min-width: 768px) {
+        width: auto;
+        margin: auto 16px;
+        h1 {
+            padding: 0px;
+        }
+    }
+    @media (min-width: 768px) {
+        margin-left: 180px;
+        margin-right: 0px;
+    }
 }
 .bandsite__header__menu {
+    width: 100%;
     ul {
         list-style-type: none;
         display: flex;
@@ -142,19 +148,50 @@ body {
             }
         }
     }
+    @media (min-width: 768px) {
+        width: 50%;
+        ul {
+            height: 100%;
+            li {
+                width: auto;
+                margin: auto 16px;
+                padding: 32px 24px 22px;
+
+            }
+        }
+    }
+    @media (min-width: 1440px) {
+        ul {
+            li {
+                width: 80px;
+                margin-left: 56px;
+                margin-right: 0px;
+                padding:32px 0px 22px;
+            }
+        }
+    }
 }
 .bandsite-shows__hero {
     color: $alabaster;
     background-color: rgba($color: $black, $alpha: 0.5); 
     display: inline-block;
     position: relative;
-    top: -16px;
     height: 472px;
+    @media (min-width: 768px) {
+        height: 670px;
+    }
 }
 .bandsite-shows__hero__image {
+    height: 472px;
     img {
         width: 100%;
         height: 472px;
+    }
+    @media (min-width: 768px) {
+    height: 670px;
+        img {
+            height: 670px;
+        }
     }
 }
 .bandsite-shows__hero__content {
@@ -172,11 +209,44 @@ body {
         font-family: "avenirNextBold";
         margin-bottom: 0px;
     }
+    @media (min-width: 768px) {
+        margin-top: 96px;
+        margin-left: 24px;
+        margin-right: 24px;
+        h1 {
+            width: 80%;
+            font-size: 57px;
+            line-height: 75px;
+        }
+        h2 {
+            font-size: 24px;
+        }
+
+    }
+    @media (min-width: 1440px) {
+        margin-top: 160px;
+        margin-left: 180px;
+        margin-right: 180px;
+        h1 {
+            width: 60%;
+        }
+    }
+}
+.bandsite-shows__hero__content__text {
+    @media (min-width: 1440px) {
+        width: 60%;
+    }
 }
 .bandsite-shows__hero__content__music-player {
     margin-top: 64px;
     iframe {
         width: 100%; 
+    }
+    @media (min-width: 768px) {
+        width: 56%;
+    }
+    @media (min-width: 1440px) {
+        width: 40%;
     }
 }
 .bandsite-shows__showtimes {
@@ -185,6 +255,9 @@ body {
     margin-bottom: 40px;
     h1 {
         font-family: "avenirNextBold";
+    }
+    @media (min-width: 768px) {
+        margin: 32px 24px 40px;   
     }
 }
 .bandsite-shows__showtimes__table {
@@ -210,14 +283,38 @@ body {
             background-color: black;
         }
     }
+    .name {
+        color: $silver;
+        margin-top: 0px;
+        margin-bottom: 16px;
+    }
+    .value {
+        color: $black;
+        margin-bottom: 24px;
+    }
 }
-#name {
-    color: $silver;
-    margin-bottom: 16px;
+.bandsite-shows__showtimes__table__column:nth-child(1n) {
+    @media (min-width: 768px) {
+        width: 30%;  
+    }
 }
-#value {
-    color: $black;
-    margin-bottom: 24px;
+.bandsite-shows__showtimes__table__column:nth-child(2n) {
+    @media (min-width: 768px) {
+        width: 20%;  
+    }
+}
+.bandsite-shows__showtimes__table__column:nth-child(3n) {
+    @media (min-width: 768px) {
+        width: 20%;  
+    }
+}
+.bandsite-shows__showtimes__table__column:nth-child(4n) {
+    @media (min-width: 768px) {
+        width: 30%;  
+    }
+}
+.btn { 
+    margin-top: 8px;
 }
 .bandsite__footer {
     color: $alabaster;
@@ -227,27 +324,51 @@ body {
 }
 .bandsite__footer__social-media {
     display: flex;
+    box-sizing: border-box;
     flex-wrap: wrap;
     margin-left: 16px;
     margin-right: 16px;
-
+    @media (min-width: 768px) {
+        margin-left: 24px;
+        margin-right: 24px;  
+    }
 }
 .bandsite__footer__social-media__title {
+    box-sizing: border-box;
     width: 100%;
     font-family: "avenirNextBold";
+    @media (min-width: 768px) {
+        width: 33%;
+        h1 {
+            font-size: 32px;
+            height: 90px;
+            margin-top: 30px;
+        }  
+    }
 }
 .bandsite__footer__social-media__icon {
+    box-sizing: border-box;
     margin: 32px 0px;
     width: 100%;
     img {
         margin-left: 16px;
     }
+    @media (min-width: 768px) {
+        width: 33%;  
+    }
 }
 .bandsite__footer__contact-us {
+    display: flex;
+    flex-wrap: wrap;
     margin-left: 16px;
     margin-right: 16px;
+    @media (min-width: 768px) {
+        margin-left: 24px;
+        margin-right: 24px;  
+    }
 }
 .bandsite__footer__contact-us__column {
+    width: 100%;
     h2 {
         font-family: "avenirNextDemiBold";
         margin-bottom: 16px; 
@@ -257,9 +378,15 @@ body {
         margin-top: 16px;
         margin-bottom: 16px;
     }
-
+    @media (min-width: 768px) {
+        width: 33%;
+    }
 }
 .bandsite__footer__copyright {
     margin-left: 16px;
     margin-right: 16px;
+    @media (min-width: 768px) {
+        margin-left: 24px;
+        margin-right: 24px;  
+    }
 }
