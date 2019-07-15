@@ -228,7 +228,7 @@ body {
         margin-left: 180px;
         margin-right: 180px;
         h1 {
-            width: 60%;
+            width: 100%;
         }
     }
 }
@@ -253,14 +253,37 @@ body {
     margin-left: 16px;
     margin-right: 16px;
     margin-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
     h1 {
         font-family: "avenirNextBold";
     }
     @media (min-width: 768px) {
         margin: 32px 24px 40px;   
     }
+    @media (min-width: 1440px) {
+        margin: 48px 180px 40px;   
+    }
+}
+.bandsite-shows__showtimes__title {
+    width: 100%;
+    @media (min-width: 768px) {
+           
+    }
+    @media (min-width: 1440px) {
+        width: 25%;   
+    }
 }
 .bandsite-shows__showtimes__table {
+    width: 100%;
+    @media (min-width: 768px) {
+           
+    }
+    @media (min-width: 1440px) {
+        width: 75%;   
+    }
+}
+.bandsite-shows__showtimes__table__row {
     display: flex;
     flex-wrap: wrap;
     margin-top: 40px;
@@ -291,6 +314,21 @@ body {
     .value {
         color: $black;
         margin-bottom: 24px;
+    }
+    @media (min-width: 1440px) {
+        button {
+            width: 160px;
+            height: 48px;
+            padding: 0px;
+            margin-bottom: 16px;
+            margin-top: 52px;
+        }
+        .name {
+            margin-bottom: 40px;
+        } 
+        .value {
+            margin-bottom: 40px;
+        }  
     }
 }
 .bandsite-shows__showtimes__table__column:nth-child(1n) {
@@ -332,6 +370,10 @@ body {
         margin-left: 24px;
         margin-right: 24px;  
     }
+    @media (min-width: 1440px) {
+        margin-left: 180px;
+        margin-right: 180px;  
+    }
 }
 .bandsite__footer__social-media__title {
     box-sizing: border-box;
@@ -345,6 +387,9 @@ body {
             margin-top: 30px;
         }  
     }
+    @media (min-width: 1440px) {
+        width: 25%;
+    }
 }
 .bandsite__footer__social-media__icon {
     box-sizing: border-box;
@@ -356,6 +401,9 @@ body {
     @media (min-width: 768px) {
         width: 33%;  
     }
+    @media (min-width: 1440px) {
+        width: 25%;
+    }
 }
 .bandsite__footer__contact-us {
     display: flex;
@@ -365,6 +413,10 @@ body {
     @media (min-width: 768px) {
         margin-left: 24px;
         margin-right: 24px;  
+    }
+    @media (min-width: 1440px) {
+        margin-left: 180px;
+        margin-right: 180px;  
     }
 }
 .bandsite__footer__contact-us__column {
@@ -381,6 +433,9 @@ body {
     @media (min-width: 768px) {
         width: 33%;
     }
+    @media (min-width: 1440px) {
+        width: 25%;
+    }
 }
 .bandsite__footer__copyright {
     margin-left: 16px;
@@ -388,5 +443,9 @@ body {
     @media (min-width: 768px) {
         margin-left: 24px;
         margin-right: 24px;  
+    }
+    @media (min-width: 1440px) {
+        margin-left: 180px;
+        margin-right: 180px;
     }
 }

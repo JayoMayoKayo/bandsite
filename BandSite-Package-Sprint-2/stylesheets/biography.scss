@@ -1,17 +1,46 @@
+//Fonts
 @font-face {
     font-family: "avenirNextRegular";
     src: url('./fonts/Linotype\ -\ AvenirNextLTPro-Regular.otf') format('opentype'),
         url('./fonts/alternative-files/Linotype\ -\ Avenir\ Next\ LT\ Pro.ttf') format('truetype'),
         url('https://fonts.google.com/specimen/Roboto');
 }
-$black: #323232;
-$silver: #AFAFAF;
-$highlight: #FAFAFA;
+@font-face {
+    font-family: "avenirNextDemiBold";
+    src: url('./fonts/Linotype\ -\ AvenirNextLTPro-Demi.otf') format('opentype'),
+        url('./fonts/alternative-files/Linotype\ -\ Avenir\ Next\ LT\ Pro\ Demi.ttf') format('truetype'),
+        url('https://fonts.google.com/specimen/Roboto');
+}
+@font-face {
+    font-family: "avenirNextBold";
+    src: url('./fonts/Linotype\ -\ AvenirNextLTPro-Bold.otf') format('opentype'),
+        url('./fonts/alternative-files/Linotype\ -\ Avenir\ Next\ LT\ Pro\ Bold.ttf') format('truetype'),
+        url('https://fonts.google.com/specimen/Roboto');
+}
+
+//Variable Colors
+    //Global
+    $black: #323232; //Paragraph Text
+    $silver: #AFAFAF; //Text Label Style
+    $mercury: #E1E1E1; //Text field border
+    $alabaster: #FAFAFA; // Text Field Background Fill
+    //Instock Colors
+    $black: #323232; //Navigation background fill
+    $inStockBlue: #004892;  //Primary CTA and Text link
+    $inStockBlueDark: #002F5F; //Primarly CTA Hover 
+    //BrainFlix
+    $black: #323232; //Navigation background fill
+    $brainFlixBlue: #0095FF; //Primary CTA and Text Link
+    $brainFlixBlueDark: #0065AD; //Primary CTA Hover
+    //BandSite
+    $black: #323232; //Navigation background fill
+    $black: #323232; //Primary CTA
+    $brainFlixBlueDark: #0065AD; //Primary CTA Hover
 
 body {
     margin: 0px;
     font-family: "avenirNextRegular";
-    color: $highlight;
+    color: $alabaster;
     p {
         font-family: "avenirNextRegular";
     }
@@ -116,8 +145,8 @@ body {
             padding-bottom: 2px;
             border-bottom: 3px solid $black;
             &:hover {
-                color: $highlight;
-                border-bottom: 3px solid $highlight;
+                color: $alabaster;
+                border-bottom: 3px solid $alabaster;
             }
         }
     }
@@ -146,7 +175,7 @@ body {
 }
 .bandsite__hero {
     position: relative;
-    color: $highlight;
+    color: $alabaster;
     background-color: rgba($color: $black, $alpha: 0.5);
     img {
         width: 100%;
@@ -259,7 +288,7 @@ body {
     padding-left: 16px;
     padding-right: 16px;
     padding-bottom: 40px;
-    background-color: $highlight;
+    background-color: $alabaster;
     @media (min-width: 768px) {
         padding-left: 24px;
         padding-right: 24px;
@@ -299,69 +328,212 @@ body {
     }
 
 }
-.bandsite__footer {
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    background-color: $black;
-    color: $highlight;
+.bandsite__conversation {
+    margin-top: 32px;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 40px;
+    color: $black;
     @media (min-width: 768px) {
-        padding-left: 24px;
-        padding-right: 24px;
+        margin-left: 24px;
+        margin-right: 24px; 
     }
+}
+.bandsite__conversation__title {
+    margin-top: 40px;
+}
+.bandsite__conversation__new-comment {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    border-bottom: $silver solid 2px;
+    @media (min-width: 768px) {
+        margin-left: 100px;
+        margin-right: 100px; 
+    }
+}
+.bandsite__conversation__new-comment__user-icon-column {
+    box-sizing: border-box;
+    padding-top: 18px;
+    width: 25%;
+    img {
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+    }
+}
+.bandsite__conversation__new-comment__comment-column {
+    width: 75%;
+    h5 {
+        color: $silver;
+    }
+}
+.bandsite__conversation__new-comment__comment-column__name {
+    input {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 16px 8px;
+        color: $black;
+        background-color: $alabaster;
+        border: $black solid 3px;
+        border-radius: 5px;
+    }
+}
+.bandsite__conversation__new-comment__comment-column__comment {
+    margin-top: 24px;
+    input {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 16px 8px 56px;
+        color: $black;
+        background-color: $alabaster;
+        border: $black solid 3px;
+        border-radius: 5px;
+    }
+}
+.bandsite__conversation__new-comment__comment-column__button {
+    margin-top: 8px;
+    button {
+        width: 100%;
+        box-sizing: border-box;
+        color: $alabaster;
+        background-color: $black;
+        border: none;
+        border-radius: 4px;
+        margin-top: 8px;
+        margin-bottom: 32px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        &:hover {
+            background-color: black;
+        }
+    }
+}
+
+.bandsite__conversation__old-comments__card {
+    margin-top: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: $silver solid 2px;
+}
+.bandsite__conversation__old-comments__card__icon {
+    width: 25%;
+    img {
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+    }
+}
+.bandsite__conversation__old-comments__card__text {
+    width: 75%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.bandsite__conversation__old-comments__card__text__name {
+    width: 50%;
+}
+.bandsite__conversation__old-comments__card__text__date {
+    color: $silver;
+    width: 50%;
+    text-align: right;
+}
+.bandsite__conversation__old-comments__card__text__comment {
+    margin-top: 16px;
+    width: 100%;
+    margin-bottom: 24px;
+}
+.bandsite__footer {
+    color: $alabaster;
+    background-color: $black;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 .bandsite__footer__social-media {
     display: flex;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    margin-left: 16px;
+    margin-right: 16px;
     @media (min-width: 768px) {
-        justify-content: flex-start;
-        margin-bottom: 32px;
+        margin-left: 24px;
+        margin-right: 24px;  
+    }
+    @media (min-width: 1440px) {
+        margin-left: 180px;
+        margin-right: 180px;  
     }
 }
 .bandsite__footer__social-media__title {
-    width: auto;
+    box-sizing: border-box;
+    width: 100%;
+    font-family: "avenirNextBold";
     @media (min-width: 768px) {
-        max-width: 224ps;
-        margin-right: 24px;
+        width: 33%;
+        h1 {
+            font-size: 32px;
+            height: 90px;
+            margin-top: 30px;
+        }  
+    }
+    @media (min-width: 1440px) {
+        width: 25%;
     }
 }
 .bandsite__footer__social-media__icon {
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    box-sizing: border-box;
+    margin: 32px 0px;
+    width: 100%;
     img {
-        margin-right: 32px;
+        margin-left: 16px;
     }
     @media (min-width: 768px) {
-        padding: 0px;
-        margin-left: 24px;
+        width: 33%;  
+    }
+    @media (min-width: 1440px) {
+        width: 25%;
     }
 }
 .bandsite__footer__contact-us {
     display: flex;
     flex-wrap: wrap;
-    
-}
-.bandsite__footer__contact-us__column {
-    min-width: 210px;
-    h2 {
-        margin-bottom: 16px;
-    }
-    h5 {
-        margin-bottom:16px;
-    }
+    margin-left: 16px;
+    margin-right: 16px;
     @media (min-width: 768px) {
-        max-width: 224px;
+        margin-left: 24px;
+        margin-right: 24px;  
     }
     @media (min-width: 1440px) {
-        
+        margin-left: 180px;
+        margin-right: 180px;  
+    }
+}
+.bandsite__footer__contact-us__column {
+    width: 100%;
+    h2 {
+        font-family: "avenirNextDemiBold";
+        margin-bottom: 16px; 
+    }
+    h5 {
+        font-family: "avenirNextRegular";
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+    @media (min-width: 768px) {
+        width: 33%;
+    }
+    @media (min-width: 1440px) {
+        width: 25%;
     }
 }
 .bandsite__footer__copyright {
-    display: flex;
-    width: 224px;
+    margin-left: 16px;
+    margin-right: 16px;
     @media (min-width: 768px) {
-        width: 100%;
+        margin-left: 24px;
+        margin-right: 24px;  
+    }
+    @media (min-width: 1440px) {
+        margin-left: 180px;
+        margin-right: 180px;
     }
 }
