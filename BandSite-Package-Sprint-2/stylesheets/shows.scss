@@ -98,6 +98,10 @@ body {
     height: 80px;
     position: relative;
     z-index: 2;
+    a {
+        color: $alabaster;
+        text-decoration: none;
+    }
 }
 .bandsite__header__logo {
     box-sizing: border-box;

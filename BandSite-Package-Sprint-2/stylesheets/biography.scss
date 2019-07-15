@@ -92,83 +92,88 @@ body {
         }
     }
 }
+//General Class Stylings
 .bandsite__header {
+    display: flex;
+    flex-wrap: wrap;
+    color: $alabaster;
     background-color: $black;
     height: 80px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    text-align: center;
-    img {
-        height: 100%;
-        width: auto;
-    }
-    @media (min-width: 768px) {
-        padding-left: 24px;
-        padding-right: 24px;
-        flex-direction: row;
-        justify-content: flex-start;
-    }
-    @media (min-width: 1440px) {
-        padding-left: 180px;
-        padding-right: 180px;
+    position: relative;
+    z-index: 2;
+    a {
+        color: $alabaster;
+        text-decoration: none;
     }
 }
 .bandsite__header__logo {
-    margin-top: 8px;
-    margin-bottom: 0px;
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 16px;
+    text-align: center;
+    h1 {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-top: 7px;
+    }
     @media (min-width: 768px) {
         width: auto;
-        margin-right: 25px;
+        margin: auto 16px;
+        h1 {
+            padding: 0px;
+        }
     }
-    @media (min-width: 1440px) {
+    @media (min-width: 768px) {
+        margin-left: 180px;
         margin-right: 0px;
     }
 }
 .bandsite__header__menu {
-    color: $silver;
-    margin-top: 16px;
+    width: 100%;
     ul {
-        display: flex;
         list-style-type: none;
-        overflow: hidden;
+        display: flex;
         flex-direction: row;
         padding-inline-start: 0px;
         box-sizing: border-box;
-        margin: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
         li {
-            color: $silver;
-            display: block;
+            color: $mercury;
             box-sizing: border-box;
-            justify-content: center;
             width: 50%;
+            text-align: center;
             padding-bottom: 2px;
-            border-bottom: 3px solid $black;
-            &:hover {
+            border-bottom: 5px solid $black;
+            &:hover { 
                 color: $alabaster;
-                border-bottom: 3px solid $alabaster;
+                border-bottom: 5px solid $alabaster;
+            }
+            h4 {
+                margin-top: 0px;
+                margin-bottom: 0px;
             }
         }
     }
     @media (min-width: 768px) {
-        justify-content: flex-start;
+        width: 50%;
         ul {
-            width: auto;
+            height: 100%;
             li {
                 width: auto;
-                padding-left: 50px;
-                padding-right: 50px;
+                margin: auto 16px;
+                padding: 32px 24px 22px;
+
             }
         }
     }
     @media (min-width: 1440px) {
-        margin-left: 56px;
         ul {
             li {
-                margin-right: 56px;
                 width: 80px;
-                padding-right: 0px;
-                padding-left: 0px;
+                margin-left: 56px;
+                margin-right: 0px;
+                padding:32px 0px 22px;
             }
         }
     }
@@ -273,14 +278,17 @@ body {
 .bandsite__about__article__articles {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     @media (min-width: 768px) {
         justify-content: space-between;
     }
 }
 .bandsite__about__article__articles__column {
+    box-sizing: border-box;
     margin-top: 24px;
+    width: 100%;
     @media (min-width: 768px) {
-        max-width: 348px;
+        width: 50%;
     }
 }
 .bandsite__photo-gallery {
@@ -338,6 +346,10 @@ body {
         margin-left: 24px;
         margin-right: 24px; 
     }
+    @media (min-width: 1440px) {
+        margin-left: 180px;
+        margin-right: 180px;
+    }
 }
 .bandsite__conversation__title {
     margin-top: 40px;
@@ -351,6 +363,11 @@ body {
         margin-left: 100px;
         margin-right: 100px; 
     }
+    @media (min-width: 1440px) {
+        margin-left: 276px;
+        margin-right: 276px;
+        margin-top: 56px; 
+    }
 }
 .bandsite__conversation__new-comment__user-icon-column {
     box-sizing: border-box;
@@ -361,11 +378,17 @@ body {
         height: 56px;
         border-radius: 50%;
     }
+    @media (min-width: 1440px) {
+        width: 68px;
+    }
 }
 .bandsite__conversation__new-comment__comment-column {
     width: 75%;
     h5 {
         color: $silver;
+    }
+    @media (min-width: 1440px) {
+     width: 87%;
     }
 }
 .bandsite__conversation__new-comment__comment-column__name {
@@ -393,7 +416,7 @@ body {
 }
 .bandsite__conversation__new-comment__comment-column__button {
     margin-top: 8px;
-    button {
+    .formButton {
         width: 100%;
         box-sizing: border-box;
         color: $alabaster;
@@ -408,9 +431,30 @@ body {
             background-color: black;
         }
     }
+    @media (min-width: 768px) {
+        .formButton {
+            width: 33%;
+            float: right;
+        }
+    }
 }
-
+.bandsite__conversation__old-comments {
+    @media (min-width: 768px) {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    @media (min-width: 1440px) {
+        margin-left: 276px;
+        margin-right: 276px; 
+    }
+}
 .bandsite__conversation__old-comments__card {
+    margin-top: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: $silver solid 2px;
+}
+.bandsite__conversation__old-comments__card__new {
     margin-top: 24px;
     display: flex;
     flex-wrap: wrap;
@@ -423,11 +467,21 @@ body {
         height: 56px;
         border-radius: 50%;
     }
+    @media (min-width: 1440px) {
+        margin-left: 50px;
+    }
+    @media (min-width: 1440px) {
+        width: 68px;
+        margin-left: 0px;
+    }
 }
 .bandsite__conversation__old-comments__card__text {
     width: 75%;
     display: flex;
     flex-wrap: wrap;
+    @media (min-width: 1440px) {
+        width: 87%;
+    }
 }
 .bandsite__conversation__old-comments__card__text__name {
     width: 50%;
