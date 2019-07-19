@@ -1,0 +1,784 @@
+@font-face {
+  font-family: "avenirNextRegular";
+  src: url("./fonts/Linotype - AvenirNextLTPro-Regular.otf") format("opentype"), url("./fonts/alternative-files/Linotype - Avenir Next LT Pro.ttf") format("truetype"), url("https://fonts.google.com/specimen/Roboto");
+}
+
+@font-face {
+  font-family: "avenirNextDemiBold";
+  src: url("./fonts/Linotype - AvenirNextLTPro-Demi.otf") format("opentype"), url("./fonts/alternative-files/Linotype - Avenir Next LT Pro Demi.ttf") format("truetype"), url("https://fonts.google.com/specimen/Roboto");
+}
+
+@font-face {
+  font-family: "avenirNextBold";
+  src: url("./fonts/Linotype - AvenirNextLTPro-Bold.otf") format("opentype"), url("./fonts/alternative-files/Linotype - Avenir Next LT Pro Bold.ttf") format("truetype"), url("https://fonts.google.com/specimen/Roboto");
+}
+
+body {
+  margin: 0px;
+  font-family: "avenirNextRegular";
+  color: #FAFAFA;
+}
+
+body p {
+  font-family: "avenirNextRegular";
+}
+
+body h1 {
+  font-size: 24px;
+  line-height: 32px;
+  margin: 0;
+}
+
+body h2 {
+  font-size: 14px;
+  line-height: 22px;
+  margin: 0;
+}
+
+body h4 {
+  font-size: 13px;
+  line-height: 18px;
+  margin: 0;
+}
+
+body h5 {
+  font-size: 12px;
+  line-height: 20px;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  body h1 {
+    font-size: 36px;
+    line-height: 44px;
+    margin: 0;
+  }
+  body h2 {
+    font-size: 24px;
+    line-height: 32px;
+    margin: 0;
+  }
+  body h3 {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0px;
+  }
+  body h4 {
+    font-size: 14px;
+    line-height: 22px;
+    margin: 0;
+  }
+  body h5 {
+    font-size: 12px;
+    line-height: 20px;
+    margin: 0;
+  }
+}
+
+.bandsite__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: #FAFAFA;
+  background-color: #323232;
+  height: 80px;
+  position: relative;
+  z-index: 2;
+}
+
+.bandsite__header a {
+  color: #FAFAFA;
+  text-decoration: none;
+}
+
+.bandsite__header__logo {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.bandsite__header__logo h1 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 7px;
+}
+
+@media (min-width: 768px) {
+  .bandsite__header__logo {
+    width: auto;
+    margin: auto 16px;
+  }
+  .bandsite__header__logo h1 {
+    padding: 0px;
+  }
+}
+
+@media (min-width: 768px) {
+  .bandsite__header__logo {
+    margin-left: 180px;
+    margin-right: 0px;
+  }
+}
+
+.bandsite__header__menu {
+  width: 100%;
+}
+
+.bandsite__header__menu ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.bandsite__header__menu ul li {
+  color: #E1E1E1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 50%;
+  text-align: center;
+  padding-bottom: 2px;
+  border-bottom: 5px solid #323232;
+}
+
+.bandsite__header__menu ul li:hover {
+  color: #FAFAFA;
+  border-bottom: 5px solid #FAFAFA;
+}
+
+.bandsite__header__menu ul li h4 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+@media (min-width: 768px) {
+  .bandsite__header__menu {
+    width: 50%;
+  }
+  .bandsite__header__menu ul {
+    height: 100%;
+  }
+  .bandsite__header__menu ul li {
+    width: auto;
+    margin: auto 16px;
+    padding: 32px 24px 22px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .bandsite__header__menu ul li {
+    width: 80px;
+    margin-left: 56px;
+    margin-right: 0px;
+    padding: 32px 0px 22px;
+  }
+}
+
+.bandsite__hero {
+  position: relative;
+  color: #FAFAFA;
+  background-color: rgba(50, 50, 50, 0.5);
+}
+
+.bandsite__hero img {
+  width: 100%;
+  max-height: 183px;
+  vertical-align: bottom;
+}
+
+.bandsite__hero h1 {
+  position: absolute;
+  top: 50%;
+  margin-left: 16px;
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%);
+  max-width: 210px;
+}
+
+@media (min-width: 768px) {
+  .bandsite__hero img {
+    max-height: 400px;
+  }
+  .bandsite__hero h1 {
+    font-size: 60px;
+    line-height: 68px;
+    margin-left: 24px;
+    max-width: 496px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .bandsite__hero img {
+    max-height: 670px;
+  }
+  .bandsite__hero h1 {
+    margin-left: 180px;
+    max-width: 528px;
+  }
+}
+
+.bandsite__about {
+  color: #323232;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 32px;
+}
+
+@media (min-width: 768px) {
+  .bandsite__about {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .bandsite__about {
+    margin-left: 272px;
+    margin-right: 180px;
+  }
+  .bandsite__about h1 {
+    margin-left: -92px;
+  }
+}
+
+.bandsite__about__title {
+  margin-bottom: 24px;
+}
+
+.bandsite__about__title h1 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.bandsite__about__picture {
+  margin-bottom: 24px;
+}
+
+.bandsite__about__picture img {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .bandsite__about__picture img {
+    max-height: 362px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .bandsite__about__picture img {
+    max-width: 896px;
+    max-height: 450px;
+  }
+}
+
+.bandsite__about__quote h1 {
+  margin-bottom: 32px;
+}
+
+@media (min-width: 1440px) {
+  .bandsite__about__quote {
+    margin-left: 92px;
+  }
+}
+
+.bandsite__about__article {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.bandsite__about__article__title {
+  width: 100%;
+}
+
+.bandsite__about__article__articles {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+  .bandsite__about__article__articles {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.bandsite__about__article__articles__column {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 24px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .bandsite__about__article__articles__column {
+    width: 50%;
+  }
+}
+
+.bandsite__photo-gallery {
+  padding-top: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 40px;
+  background-color: #FAFAFA;
+}
+
+@media (min-width: 768px) {
+  .bandsite__photo-gallery {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .bandsite__photo-gallery {
+    padding-left: 180px;
+    padding-right: 180px;
+  }
+}
+
+.bandsite__photo-gallery__title {
+  margin-bottom: 24px;
+}
+
+.bandsite__photo-gallery__title h1 {
+  color: #323232;
+}
+
+.bandsite__photo-gallery__album {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.bandsite__photo-gallery__album img {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+  .bandsite__photo-gallery__album {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .bandsite__photo-gallery__album img {
+    max-width: 224px;
+    max-height: 126px;
+    margin-bottom: 24px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .bandsite__photo-gallery__album img {
+    max-width: 344px;
+    max-height: 193px;
+    margin-bottom: 24px;
+  }
+}
+
+.bandsite__conversation {
+  margin-top: 32px;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom: 40px;
+  color: #323232;
+}
+
+@media (min-width: 768px) {
+  .bandsite__conversation {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .bandsite__conversation {
+    margin-left: 180px;
+    margin-right: 180px;
+  }
+}
+
+.bandsite__conversation__title {
+  margin-top: 40px;
+}
+
+.bandsite__conversation__new-comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 40px;
+  border-bottom: #AFAFAF solid 2px;
+}
+
+@media (min-width: 768px) {
+  .bandsite__conversation__new-comment {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .bandsite__conversation__new-comment {
+    margin-left: 276px;
+    margin-right: 276px;
+    margin-top: 56px;
+  }
+}
+
+.bandsite__conversation__new-comment__user-icon-column {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 18px;
+  width: 25%;
+}
+
+.bandsite__conversation__new-comment__user-icon-column img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+}
+
+@media (min-width: 1440px) {
+  .bandsite__conversation__new-comment__user-icon-column {
+    width: 68px;
+  }
+}
+
+.bandsite__conversation__new-comment__comment-column {
+  width: 75%;
+}
+
+.bandsite__conversation__new-comment__comment-column h5 {
+  color: #AFAFAF;
+}
+
+@media (min-width: 1440px) {
+  .bandsite__conversation__new-comment__comment-column {
+    width: 87%;
+  }
+}
+
+.bandsite__conversation__new-comment__comment-column__name input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  padding: 16px 8px;
+  color: #323232;
+  background-color: #FAFAFA;
+  border: #323232 solid 3px;
+  border-radius: 5px;
+}
+
+.bandsite__conversation__new-comment__comment-column__comment {
+  margin-top: 24px;
+}
+
+.bandsite__conversation__new-comment__comment-column__comment input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  padding: 16px 8px 56px;
+  color: #323232;
+  background-color: #FAFAFA;
+  border: #323232 solid 3px;
+  border-radius: 5px;
+}
+
+.bandsite__conversation__new-comment__comment-column__button {
+  margin-top: 8px;
+}
+
+.bandsite__conversation__new-comment__comment-column__button .formButton {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #FAFAFA;
+  background-color: #323232;
+  border: none;
+  border-radius: 4px;
+  margin-top: 8px;
+  margin-bottom: 32px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.bandsite__conversation__new-comment__comment-column__button .formButton:hover {
+  background-color: black;
+}
+
+@media (min-width: 768px) {
+  .bandsite__conversation__new-comment__comment-column__button .formButton {
+    width: 33%;
+    float: right;
+  }
+}
+
+@media (min-width: 768px) {
+  .bandsite__conversation__old-comments {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .bandsite__conversation__old-comments {
+    margin-left: 276px;
+    margin-right: 276px;
+  }
+}
+
+.bandsite__conversation__old-comments__card {
+  margin-top: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-bottom: #AFAFAF solid 2px;
+}
+
+.bandsite__conversation__old-comments__card__new {
+  margin-top: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-bottom: #AFAFAF solid 2px;
+}
+
+.bandsite__conversation__old-comments__card__icon {
+  width: 25%;
+}
+
+.bandsite__conversation__old-comments__card__icon img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+}
+
+@media (min-width: 1440px) {
+  .bandsite__conversation__old-comments__card__icon {
+    margin-left: 50px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .bandsite__conversation__old-comments__card__icon {
+    width: 68px;
+    margin-left: 0px;
+  }
+}
+
+.bandsite__conversation__old-comments__card__text {
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (min-width: 1440px) {
+  .bandsite__conversation__old-comments__card__text {
+    width: 87%;
+  }
+}
+
+.bandsite__conversation__old-comments__card__text__name {
+  width: 50%;
+}
+
+.bandsite__conversation__old-comments__card__text__date {
+  color: #AFAFAF;
+  width: 50%;
+  text-align: right;
+}
+
+.bandsite__conversation__old-comments__card__text__comment {
+  margin-top: 16px;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.bandsite__footer {
+  color: #FAFAFA;
+  background-color: #323232;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.bandsite__footer__social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+@media (min-width: 768px) {
+  .bandsite__footer__social-media {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .bandsite__footer__social-media {
+    margin-left: 180px;
+    margin-right: 180px;
+  }
+}
+
+.bandsite__footer__social-media__title {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  font-family: "avenirNextBold";
+}
+
+@media (min-width: 768px) {
+  .bandsite__footer__social-media__title {
+    width: 33%;
+  }
+  .bandsite__footer__social-media__title h1 {
+    font-size: 32px;
+    height: 90px;
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .bandsite__footer__social-media__title {
+    width: 25%;
+  }
+}
+
+.bandsite__footer__social-media__icon {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 32px 0px;
+  width: 100%;
+}
+
+.bandsite__footer__social-media__icon img {
+  margin-left: 16px;
+}
+
+@media (min-width: 768px) {
+  .bandsite__footer__social-media__icon {
+    width: 33%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .bandsite__footer__social-media__icon {
+    width: 25%;
+  }
+}
+
+.bandsite__footer__contact-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+@media (min-width: 768px) {
+  .bandsite__footer__contact-us {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .bandsite__footer__contact-us {
+    margin-left: 180px;
+    margin-right: 180px;
+  }
+}
+
+.bandsite__footer__contact-us__column {
+  width: 100%;
+}
+
+.bandsite__footer__contact-us__column h2 {
+  font-family: "avenirNextDemiBold";
+  margin-bottom: 16px;
+}
+
+.bandsite__footer__contact-us__column h5 {
+  font-family: "avenirNextRegular";
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+  .bandsite__footer__contact-us__column {
+    width: 33%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .bandsite__footer__contact-us__column {
+    width: 25%;
+  }
+}
+
+.bandsite__footer__copyright {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+@media (min-width: 768px) {
+  .bandsite__footer__copyright {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .bandsite__footer__copyright {
+    margin-left: 180px;
+    margin-right: 180px;
+  }
+}
+/*# sourceMappingURL=biography.css.map */

@@ -1,0 +1,568 @@
+@font-face {
+  font-family: "avenirNextRegular";
+  src: url("./fonts/Linotype - AvenirNextLTPro-Regular.otf") format("opentype"), url("./fonts/alternative-files/Linotype - Avenir Next LT Pro.ttf") format("truetype"), url("https://fonts.google.com/specimen/Roboto");
+}
+
+@font-face {
+  font-family: "avenirNextDemiBold";
+  src: url("./fonts/Linotype - AvenirNextLTPro-Demi.otf") format("opentype"), url("./fonts/alternative-files/Linotype - Avenir Next LT Pro Demi.ttf") format("truetype"), url("https://fonts.google.com/specimen/Roboto");
+}
+
+@font-face {
+  font-family: "avenirNextBold";
+  src: url("./fonts/Linotype - AvenirNextLTPro-Bold.otf") format("opentype"), url("./fonts/alternative-files/Linotype - Avenir Next LT Pro Bold.ttf") format("truetype"), url("https://fonts.google.com/specimen/Roboto");
+}
+
+body {
+  margin: 0px;
+  font-family: "avenirNextRegular";
+  background-color: #FAFAFA;
+  color: #323232;
+}
+
+body h1 {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+body h2 {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+body h4 {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+body h5 {
+  font-size: 12px;
+  line-height: 20px;
+}
+
+@media (min-width: 768px) {
+  body h1 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  body h2 {
+    font-size: 14px;
+    line-height: 22px;
+  }
+  body h4 {
+    font-size: 13px;
+    line-height: 18px;
+  }
+  body h5 {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
+
+.bandsite__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: #FAFAFA;
+  background-color: #323232;
+  height: 80px;
+  position: relative;
+  z-index: 2;
+}
+
+.bandsite__header a {
+  color: #FAFAFA;
+  text-decoration: none;
+}
+
+.bandsite__header__logo {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.bandsite__header__logo h1 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 7px;
+}
+
+@media (min-width: 768px) {
+  .bandsite__header__logo {
+    width: auto;
+    margin: auto 16px;
+  }
+  .bandsite__header__logo h1 {
+    padding: 0px;
+  }
+}
+
+@media (min-width: 768px) {
+  .bandsite__header__logo {
+    margin-left: 180px;
+    margin-right: 0px;
+  }
+}
+
+.bandsite__header__menu {
+  width: 100%;
+}
+
+.bandsite__header__menu ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.bandsite__header__menu ul li {
+  color: #E1E1E1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 50%;
+  text-align: center;
+  padding-bottom: 2px;
+  border-bottom: 5px solid #323232;
+}
+
+.bandsite__header__menu ul li:hover {
+  color: #FAFAFA;
+  border-bottom: 5px solid #FAFAFA;
+}
+
+.bandsite__header__menu ul li h4 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+@media (min-width: 768px) {
+  .bandsite__header__menu {
+    width: 50%;
+  }
+  .bandsite__header__menu ul {
+    height: 100%;
+  }
+  .bandsite__header__menu ul li {
+    width: auto;
+    margin: auto 16px;
+    padding: 32px 24px 22px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .bandsite__header__menu ul li {
+    width: 80px;
+    margin-left: 56px;
+    margin-right: 0px;
+    padding: 32px 0px 22px;
+  }
+}
+
+.bandsite-shows__hero {
+  color: #FAFAFA;
+  background-color: rgba(50, 50, 50, 0.5);
+  display: inline-block;
+  position: relative;
+  height: 472px;
+}
+
+@media (min-width: 768px) {
+  .bandsite-shows__hero {
+    height: 670px;
+  }
+}
+
+.bandsite-shows__hero__image {
+  height: 472px;
+}
+
+.bandsite-shows__hero__image img {
+  width: 100%;
+  height: 472px;
+}
+
+@media (min-width: 768px) {
+  .bandsite-shows__hero__image {
+    height: 670px;
+  }
+  .bandsite-shows__hero__image img {
+    height: 670px;
+  }
+}
+
+.bandsite-shows__hero__content {
+  z-index: 1;
+  top: 0px;
+  position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.bandsite-shows__hero__content h1 {
+  font-family: "avenirNextBold";
+  margin-bottom: 0px;
+}
+
+@media (min-width: 768px) {
+  .bandsite-shows__hero__content {
+    margin-top: 96px;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+  .bandsite-shows__hero__content h1 {
+    width: 80%;
+    font-size: 57px;
+    line-height: 75px;
+  }
+  .bandsite-shows__hero__content h2 {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .bandsite-shows__hero__content {
+    margin-top: 160px;
+    margin-left: 180px;
+    margin-right: 180px;
+  }
+  .bandsite-shows__hero__content h1 {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .bandsite-shows__hero__content__text {
+    width: 60%;
+  }
+}
+
+.bandsite-shows__hero__content__music-player {
+  margin-top: 64px;
+}
+
+.bandsite-shows__hero__content__music-player iframe {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .bandsite-shows__hero__content__music-player {
+    width: 56%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .bandsite-shows__hero__content__music-player {
+    width: 40%;
+  }
+}
+
+.bandsite-shows__showtimes {
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.bandsite-shows__showtimes h1 {
+  font-family: "avenirNextBold";
+}
+
+@media (min-width: 768px) {
+  .bandsite-shows__showtimes {
+    margin: 32px 24px 40px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .bandsite-shows__showtimes {
+    margin: 48px 180px 40px;
+  }
+}
+
+.bandsite-shows__showtimes__title {
+  width: 100%;
+}
+
+@media (min-width: 1440px) {
+  .bandsite-shows__showtimes__title {
+    width: 25%;
+  }
+}
+
+.bandsite-shows__showtimes__table {
+  width: 100%;
+}
+
+@media (min-width: 1440px) {
+  .bandsite-shows__showtimes__table {
+    width: 75%;
+  }
+}
+
+.bandsite-shows__showtimes__table__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 40px;
+  border-bottom: 2px solid #E1E1E1;
+}
+
+.bandsite-shows__showtimes__table__column {
+  width: 100%;
+}
+
+.bandsite-shows__showtimes__table__column button {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #FAFAFA;
+  background-color: #323232;
+  border: none;
+  border-radius: 4px;
+  margin-top: 8px;
+  margin-bottom: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.bandsite-shows__showtimes__table__column button:hover {
+  background-color: black;
+}
+
+.bandsite-shows__showtimes__table__column .name {
+  color: #AFAFAF;
+  margin-top: 0px;
+  margin-bottom: 16px;
+}
+
+.bandsite-shows__showtimes__table__column .value {
+  color: #323232;
+  margin-bottom: 24px;
+}
+
+@media (min-width: 1440px) {
+  .bandsite-shows__showtimes__table__column button {
+    width: 160px;
+    height: 48px;
+    padding: 0px;
+    margin-bottom: 16px;
+    margin-top: 52px;
+  }
+  .bandsite-shows__showtimes__table__column .name {
+    margin-bottom: 40px;
+  }
+  .bandsite-shows__showtimes__table__column .value {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  .bandsite-shows__showtimes__table__column:nth-child(1n) {
+    width: 30%;
+  }
+}
+
+@media (min-width: 768px) {
+  .bandsite-shows__showtimes__table__column:nth-child(2n) {
+    width: 20%;
+  }
+}
+
+@media (min-width: 768px) {
+  .bandsite-shows__showtimes__table__column:nth-child(3n) {
+    width: 20%;
+  }
+}
+
+@media (min-width: 768px) {
+  .bandsite-shows__showtimes__table__column:nth-child(4n) {
+    width: 30%;
+  }
+}
+
+.btn {
+  margin-top: 8px;
+}
+
+.bandsite__footer {
+  color: #FAFAFA;
+  background-color: #323232;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.bandsite__footer__social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+@media (min-width: 768px) {
+  .bandsite__footer__social-media {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .bandsite__footer__social-media {
+    margin-left: 180px;
+    margin-right: 180px;
+  }
+}
+
+.bandsite__footer__social-media__title {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  font-family: "avenirNextBold";
+}
+
+@media (min-width: 768px) {
+  .bandsite__footer__social-media__title {
+    width: 33%;
+  }
+  .bandsite__footer__social-media__title h1 {
+    font-size: 32px;
+    height: 90px;
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .bandsite__footer__social-media__title {
+    width: 25%;
+  }
+}
+
+.bandsite__footer__social-media__icon {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 32px 0px;
+  width: 100%;
+}
+
+.bandsite__footer__social-media__icon img {
+  margin-left: 16px;
+}
+
+@media (min-width: 768px) {
+  .bandsite__footer__social-media__icon {
+    width: 33%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .bandsite__footer__social-media__icon {
+    width: 25%;
+  }
+}
+
+.bandsite__footer__contact-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+@media (min-width: 768px) {
+  .bandsite__footer__contact-us {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .bandsite__footer__contact-us {
+    margin-left: 180px;
+    margin-right: 180px;
+  }
+}
+
+.bandsite__footer__contact-us__column {
+  width: 100%;
+}
+
+.bandsite__footer__contact-us__column h2 {
+  font-family: "avenirNextDemiBold";
+  margin-bottom: 16px;
+}
+
+.bandsite__footer__contact-us__column h5 {
+  font-family: "avenirNextRegular";
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+  .bandsite__footer__contact-us__column {
+    width: 33%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .bandsite__footer__contact-us__column {
+    width: 25%;
+  }
+}
+
+.bandsite__footer__copyright {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+@media (min-width: 768px) {
+  .bandsite__footer__copyright {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .bandsite__footer__copyright {
+    margin-left: 180px;
+    margin-right: 180px;
+  }
+}
+/*# sourceMappingURL=shows.css.map */
