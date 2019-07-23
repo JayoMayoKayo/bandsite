@@ -16,62 +16,46 @@
 body {
   margin: 0px;
   font-family: "avenirNextRegular";
-  color: #FAFAFA;
-}
-
-body p {
-  font-family: "avenirNextRegular";
+  background-color: #FAFAFA;
+  color: #323232;
 }
 
 body h1 {
   font-size: 24px;
   line-height: 32px;
-  margin: 0;
 }
 
 body h2 {
   font-size: 14px;
   line-height: 22px;
-  margin: 0;
 }
 
 body h4 {
   font-size: 13px;
   line-height: 18px;
-  margin: 0;
 }
 
 body h5 {
   font-size: 12px;
   line-height: 20px;
-  margin: 0;
 }
 
 @media (min-width: 768px) {
   body h1 {
-    font-size: 36px;
-    line-height: 44px;
-    margin: 0;
-  }
-  body h2 {
     font-size: 24px;
     line-height: 32px;
-    margin: 0;
   }
-  body h3 {
-    font-size: 16px;
-    line-height: 24px;
-    margin: 0px;
-  }
-  body h4 {
+  body h2 {
     font-size: 14px;
     line-height: 22px;
-    margin: 0;
+  }
+  body h4 {
+    font-size: 13px;
+    line-height: 18px;
   }
   body h5 {
     font-size: 12px;
     line-height: 20px;
-    margin: 0;
   }
 }
 
