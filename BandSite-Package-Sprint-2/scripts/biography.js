@@ -29,7 +29,7 @@ window.onload = function() {
     
     for (let j = 0; j < commentArray.length; j++) {
         let storedCommentCard = document.createElement('div');
-        storedCommentCard.className = 'bandsite__conversation__old-comments__card__new';
+        storedCommentCard.className = '.bandsite__conversation__old-comments__card__new';
         storedCommentCard.innerHTML = oldCommentCard.innerHTML;
 
         let oldUserInfo = storedCommentCard.querySelector('.bandsite__conversation__old-comments__card__text');
@@ -52,7 +52,7 @@ window.onload = function() {
         let newCommentCard = document.createElement('div');
 
         //Get the inner html of the old comment cards
-        newCommentCard.className = 'bandsite__conversation__old-comments__card__new';
+        newCommentCard.className = '.bandsite__conversation__old-comments__card__new';
 
         //inject into the new old comment card
         newCommentCard.innerHTML = oldCommentCard.innerHTML;

@@ -5,14 +5,14 @@ window.onload = function() {
     let oldComments = document.querySelector('.bandsite__conversation__old-comments');
 
     //These functions will not run until the entire page is loaded
-    
     retrieveAxiosData(oldCommentArray);
     commentList.addEventListener('submit', submitComment);
 
     
 };
 //Global Variables
-const url = "https://project-1-api.herokuapp.com/comments?api_key=1ea64b63-d8fd-4be7-9dfd-9b1f1c802a94&fbclid=IwAR3ZQhnljSxr8dRaQhzguMGSk6fHn4GKvKSzk5H_uUPMa9CzE-HV7BhNFt8";
+const id = "1ea64b63-d8fd-4be7-9dfd-9b1f1c802a94&fbclid=IwAR3ZQhnljSxr8dRaQhzguMGSk6fHn4GKvKSzk5H_uUPMa9CzE-HV7BhNFt8";
+const url = "https://project-1-api.herokuapp.com/comments?api_key=" + id;
 let oldComments = document.querySelector('.bandsite__conversation__old-comments');
 //this function does an axios get request for the old comments
 function retrieveAxiosData(oldCommentArrayParam) {
@@ -20,11 +20,13 @@ function retrieveAxiosData(oldCommentArrayParam) {
     .then(function (response) {
         //Handle Success
         oldCommentArrayParam = response.data;
+
+        let oldComments = document.querySelector('.bandsite__conversation__old-comments');
+        oldComments.innerHTML = '';
         for (let i = 0; i < oldCommentArrayParam.length; i++) {
-            //console.log(oldCommentArrayParam[i].name);
-            
-            let oldComments = document.querySelector('.bandsite__conversation__old-comments');
+            oldComments = document.querySelector('.bandsite__conversation__old-comments');
             let commentCard = document.createElement('div');
+            commentCard = document.createElement('div');
             commentCard.classList.add('.bandsite__conversation__old-comments__card');
             commentCard.innerHTML = `
                 <div id="old-comment-card" class="bandsite__conversation__old-comments__card">    
@@ -44,16 +46,19 @@ function retrieveAxiosData(oldCommentArrayParam) {
                     </div>
                 </div>
             `;
-            
             let nameData = commentCard.querySelector('.old-user-name');
             let commentData = commentCard.querySelector('.old-user-comment');
             let dateData = commentCard.querySelector('.old-user-date');
             
+            millisecondsDate = oldCommentArrayParam[i].timestamp;
+            let fullDate = new Date(millisecondsDate);
+            let dateYears = fullDate.getFullYear();
+            let dateMonths = fullDate.getMonth() + 1;
+            let dateDays = fullDate.getDate();
+
             nameData.innerHTML = `${oldCommentArrayParam[i].name}`;
             commentData.innerHTML = `${oldCommentArrayParam[i].comment}`;
-            dateData.innerHTML = `${oldCommentArrayParam[i].timestamp}`;
-        
-
+            dateData.innerHTML = `${dateMonths + "/" + dateDays + "/" + dateYears}`;        
 
             oldComments.insertBefore(commentCard, oldComments.firstChild);
         }
@@ -61,7 +66,7 @@ function retrieveAxiosData(oldCommentArrayParam) {
     .catch(function (error) {
         //Handle Error
         console.log(error);
-        alert('test error');
+        alert('error');
     })
     return oldCommentArrayParam;
 }
@@ -91,7 +96,6 @@ function pushAxiosData(nameParam, commentParam) {
         axios.get(url)
         .then(function (response) {
             let newCommentArray = [];
-            removeOldComments(newCommentArray);
             retrieveAxiosData(newCommentArray);
 
         })
@@ -101,11 +105,4 @@ function pushAxiosData(nameParam, commentParam) {
         })
     })
     
-}
-function removeOldComments(oldCommentListArray) {
-    let oldCommentList = document.getElementsByName('.bandsite__conversation__old-comments');
-    let oldCommentGroup = document.querySelectorAll('.bandsite__conversation__old-comments__card').remove;
-    for (let j = 0; j < (oldCommentListArray.length - 1); j++) {
-        console.log(oldCommentGroup[j]);
-    }
 }
