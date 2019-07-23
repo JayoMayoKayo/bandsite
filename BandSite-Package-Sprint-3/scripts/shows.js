@@ -56,3 +56,8 @@ function getAxiosData() {
         alert("error");
     })
 }
+
+// let rickRoll = document.querySelector('.soundHeader__playButton');
+// rickRoll.innerHTML = " "
+
+// console.log(rickRoll)
